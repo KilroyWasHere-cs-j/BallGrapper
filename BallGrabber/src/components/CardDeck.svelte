@@ -1,4 +1,4 @@
-<div class="wrapper">
+<div class="wrapper w-full h-full flex flex-col justify-center items-center m-6">
   <div class="one border-solid border-4 shadow-lg border-baseballRed rounded-lg bg-white w-[250px] h-[250px]">Pic One</div>
   <div class="two border-solid border-4 shadow-lg border-baseballRed rounded-lg bg-white w-[250px] h-[250px]">Pic Two</div>
   <div class="three border-solid border-4 shadow-lg border-baseballRed rounded-lg bg-white w-[250px] h-[250px]">Pic Three</div>

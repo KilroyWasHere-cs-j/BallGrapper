@@ -7,11 +7,15 @@
 	function openOrderPage(){
 		window.open("https://www.google.com", "_blank");
 	}
+
+	function openEmail(){
+		window.location.href = "mailto:towerg1@wit.edu?subject=BallGrabber Inquiry&body="; 
+	}
 </script>
 
 <svelte:head>
 	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="Main page for the Ball Grabber website" content="BallGrabber" />
 </svelte:head>
 
 
@@ -22,7 +26,7 @@
 
 <VBuff/>
 
-<div class="">
+<div class="w-full h-full flex flex-col justify-center items-center">
 	<Heading tag="h1" class="mb-4 text-gray-500 dark:text-baseballRed m-10" customSize="text-4xl font-extrabold  md:text-5xl lg:text-6xl shadow-lg shadow-baseballRed">What is the Ball Grabber</Heading>
 	<P class="mb-3 text-center" weight="light" color="text-gray-500 dark:text-baseballRed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sodales ut etiam sit amet nisl purus. Nullam ac tortor vitae purus faucibus. Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus. Vitae et leo duis ut diam quam nulla porttitor massa. Suspendisse interdum consectetur libero id. Risus in hendrerit gravida rutrum quisque. Tincidunt arcu non sodales neque sodales. Eu ultrices vitae auctor eu augue ut lectus arcu bibendum. Sodales ut etiam sit amet. Arcu felis bibendum ut tristique et egestas quis ipsum suspendisse. Scelerisque purus semper eget duis at tellus at urna. Aliquam etiam erat velit scelerisque in dictum. Nec ultrices dui sapien eget. In nulla posuere sollicitudin aliquam ultrices sagittis orci.
 
@@ -31,7 +35,7 @@
 
 <VBuff/>
 
-<div class="">
+<div class="w-full h-full flex flex-col justify-center items-center">
 	<Heading tag="h1" class="mb-4 text-gray-500 dark:text-baseballRed m-10" customSize="text-4xl font-extrabold  md:text-5xl lg:text-6xl shadow-lg shadow-baseballRed">How does it work?</Heading>
 	<P class="mb-3 text-center" weight="light" color="text-gray-500 dark:text-baseballRed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sodales ut etiam sit amet nisl purus. Nullam ac tortor vitae purus faucibus. Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus. Vitae et leo duis ut diam quam nulla porttitor massa. Suspendisse interdum consectetur libero id. Risus in hendrerit gravida rutrum quisque. Tincidunt arcu non sodales neque sodales. Eu ultrices vitae auctor eu augue ut lectus arcu bibendum. Sodales ut etiam sit amet. Arcu felis bibendum ut tristique et egestas quis ipsum suspendisse. Scelerisque purus semper eget duis at tellus at urna. Aliquam etiam erat velit scelerisque in dictum. Nec ultrices dui sapien eget. In nulla posuere sollicitudin aliquam ultrices sagittis orci.
 
@@ -41,11 +45,11 @@
 
 <VBuff/>
 
-<div class="">
-	<Heading tag="h1" class="mb-4 text-gray-500 dark:text-baseballRed m-10" customSize="text-4xl font-extrabold  md:text-5xl lg:text-6xl">Where to get one</Heading>
-	<P class="mb-3 text-center" weight="light" color="text-gray-500 dark:text-baseballRed">Purchasing info</P>
+<div class="w-full h-full flex flex-col justify-center items-center">
+	<Heading tag="h1" class="mb-4 text-gray-500 dark:text-baseballRed m-10 flex content-center justify-center" customSize="text-4xl font-extrabold  md:text-5xl lg:text-6xl">Where to get one</Heading>
+	<P class="mb-3 text-center flex content-center justify-center" weight="light" color="text-gray-500 dark:text-baseballRed">If your interested in aquiring your very own ball grabber fel free to reach out.</P>
 	<div class="flex content-center justify-center">
-		<ButtonComponent on:click={openOrderPage} symbol={"⚾"} bgColor={"#E63946"}/>
+		<ButtonComponent on:click={openEmail} symbol={"⚾"} bgColor={"#E63946"}/>
 	</div>
 </div>
 
